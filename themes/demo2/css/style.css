@@ -1,0 +1,495 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol,
+fieldset, form, label, legend,
+caption, tbody, tfoot, thead, th,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #848484;
+}
+
+#wrapper{
+	margin: 0 auto;
+	padding: 0;
+	width: 1020px;
+	background: #FFF;
+}
+
+.no-underline {
+	text-decoration: none;
+}
+
+#header {
+	height: 48px;
+	width: 100%;
+	background: url(../images/header.jpg);
+	position: relative;
+	top:0;
+	left: 0;
+	z-index: 1;
+}
+
+#header:before {
+	width: 10px;
+	height: 55px;
+	background: #FFF;
+}
+
+#logo {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+
+/* Header menu */
+
+#header ul {
+	margin: 0 0 0 300px;
+}
+
+#header ul li {
+	list-style-type: none;
+	float: left;
+	font-family: Arial;
+	color: #FFF;
+	font-size: 1em;
+	padding: 15px 10px 0 10px;
+	height: 33px;
+}
+
+#header ul li:hover {
+	background: #871414;
+	border-bottom: 4px solid #e6f224;
+	height: 29px;
+}
+
+/* Меню */
+
+#menu-header {
+	width: 100%;
+	height: 39px;
+	background: #3a7b2f;
+}
+
+#nav {
+	margin-left: 280px;
+	padding-top: 5px;
+}
+
+#nav li {
+	float: left;
+	margin-right: 10px;
+	list-style-type: none;
+	width: 90px;
+	line-height: 0.9;
+	background: #3a7b2f;
+	position:relative;
+}
+
+#nav ul {
+	background: #3a7b2f;
+	left: -9999px;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	opacity:0; 
+	-webkit-transition:0.25s linear opacity;
+	padding: 0 10px 10px 10px;
+	border-radius: 0 0 5px 5px;
+}
+
+#nav ul li{
+	margin-top: 10px;
+	padding: 0;
+	width: 200px;
+}
+
+#nav li:hover ul {
+	opacity: 1;
+	left: 0;
+}
+
+#menu-header .ahead {
+	font-family: Tahoma;
+	font-size: 0.75em;
+	color: #FFF;
+	text-decoration: none;	
+}
+
+#menu-header .ahead:hover {
+	color: #7b0303;
+}
+
+#menu-header .sub-ahead {
+	font-family: Arial;
+	font-size: 0.6875em;
+	color: #FFF;
+	text-decoration: none;	
+}
+
+#menu-header .sub-ahead:hover {
+	color: #7b0303;
+}
+
+/* Рекламные баннеры */
+
+#adw {
+	text-align: center;
+	width: 100%;
+	height: 329px;
+	background: rgb(237,237,237); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(237,237,237,1) 0%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(237,237,237,1)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(237,237,237,1) 0%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(237,237,237,1) 0%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(237,237,237,1) 0%,rgba(255,255,255,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(237,237,237,1) 0%,rgba(255,255,255,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
+}
+
+/* Sidebar */
+#sidebar {
+	width: 280px;
+	float: left;
+	padding-right: 10px;
+}
+
+#sidebar h4 {
+	font-family: Tahoma;
+	font-size: 1.125em;
+	color: #056207;
+	margin: 0 0 0 30px;
+}
+
+#filter_category li {
+	list-style-type: none;
+}
+
+#filter_category .filter_head {
+	font-family: Tahoma;
+	font-size: 0.9375em;
+	color: #464646;
+	margin: 10px 0 0 30px;
+}
+
+#filter_category .filter_option {
+	font-family: Tahoma;
+	font-size: 0.8125em;
+	color: #0e5591;
+	margin: 5px 0 0 10px;
+}
+
+#menu {
+	background: url(../images/header.jpg);
+}
+
+#menu .title {
+	background: #814d3b;
+	font-family: Tahoma;
+	font-size: 1.5em;
+	color: #FFF;
+	height: 45px;
+	padding: 10px 0 0 20px;
+	width: 260px;
+	position: relative;
+	z-index: 4;
+	margin-top: 0;
+}
+
+#menu .title:hover {
+	background: #814d3b;
+	color: #FFF;
+}
+
+#menu .corner {
+	background: url(../images/corner.png) no-repeat;
+	height: 6px;
+	background-position: 20px -2px;
+	margin-top: 0;
+	position: relative;
+	z-index: 3;
+}
+
+#menu .corner:hover {
+	background: url(../images/corner.png) no-repeat;
+	background-position: 20px -2px;
+}
+
+#menu a {
+	text-decoration: none;
+}
+
+#menu li {
+	width: 260px;
+	padding: 10px 0 0 40px;
+	height: 30px;
+	margin-top: 10px;
+	font-family: Tahoma;
+	color: #FFF;
+	font-size: 0.875em;
+	list-style-type: none;
+}
+
+#menu li:hover {
+	background: #FFF;
+	color: #06394f;
+}
+
+#sidebar-category li{
+	list-style-type: none;
+	margin: 10px 0 0 30px;
+}
+
+#sidebar-category li a{
+	font-family: Tahoma;
+	color: #464646;
+	font-size: 0.9375em;
+}
+
+#sidebar-category ul li{
+	list-style-type: none;
+	margin: 0 0 0 10px;
+}
+
+#sidebar-category ul li a{
+	font-family: Tahoma;
+	color: #0e5591;
+	font-size: 0.8125em;
+}
+
+#sidebar-category a:hover{
+	text-decoration: underline;
+	color: #7b0303;
+}
+
+
+/* Content */
+
+h1 {
+	font-family: Tahoma;
+	font-size: 1.5em;
+	color: #5c5c5c;
+	margin: 0 0 5px 0;
+}
+
+h2 {
+	font-family: Tahoma;
+	font-size: 1.125em;
+	color: #3a7b2f;
+	margin: 5px 0;
+}
+
+#show_options table {
+	font-family: Verdana;
+	color: #202020;
+	font-size: 0.875em;
+	width: 90%;
+	border-spacing: 0 5px;
+}
+
+#content {
+	float: left;
+	padding: 10px 0;
+	width: 730px;
+}
+
+#product_content {
+	padding: 10px 0;
+	width: 100%;
+}
+
+#product_content .line {
+	border-top: 1px solid #EEE;
+	width: 90%;
+}
+
+#content .red_back {
+	padding: 20px 10px 15px 10px;
+	background: #ab1212;
+	font-family: Tahoma;
+	color: #FFF;
+	font-size: 1.125em
+}
+
+#product_content {
+	width: 100%;
+}
+
+#product, #image_product {
+	float: left;
+}
+
+#minidescription, #full_description_text {
+	margin: 5px 0;
+	font-family: Tahoma;
+	color: #202020;
+	font-size: 0.875em;
+	line-height: 20px;
+}
+
+#product .code {
+	font-family: Tahoma;
+	color: #494949;
+	font-size: 0.75em
+}
+
+.item_info a {
+	font-family: Tahoma;
+	color: #2069a7;
+	font-size: 0.875em;
+}
+
+#content .price, #product_content .price {
+	font-family: Tahoma;
+	color: #264f04;
+	font-size: 1.5em;
+}
+
+#content .default_price, #product_content .default_price {
+	font-family: Tahoma;
+	color: #4f89a4;
+	font-size: 0.75em;
+}
+
+#content .add_cart, #product_content .add_cart {
+	margin: 3px 0;
+	width: 100px;
+	height: 34px;
+	background: #dce154;
+	border: none;
+	cursor: pointer;
+	transition: background .5s ease;
+}
+
+#content .add_cart:hover, #product_content .add_cart:hover {
+	background: #ebf064;
+}
+
+#content .in_cart, #product_content .in_cart {
+	width: 100px;
+	height: 34px;
+	background: #21790d;
+	border: none;
+	color: #FFF;
+}
+
+/* Отображение подкатегорий в категориях */
+
+#category {
+	margin-top: 30px;
+}
+
+#category li {
+	float: left;
+	width: 140px;
+	padding: 5px;
+	list-style-type: none;
+	text-align: center;
+}
+
+#category li:hover {
+	border: 1px solid #EEE;
+	padding: 4px;
+	border-radius: 5px;
+}
+
+#category a{
+	font-family: Tahoma;
+	font-size: 0.75em;
+	color: #2069a7;
+}
+
+/* Список товаров в категории */
+
+#filter .list_item_category {
+	width: 100%;
+	padding: 0 0 10px 0;
+}
+
+#filter .item_link {
+	font-family: Tahoma;
+	font-size: 1em;
+	color: #2069a7;
+}
+
+#filter .price {
+	font-family: Tahoma;
+	font-size: 1.5em;
+	color: #464646;
+	font-weight: bold;
+}
+
+#filter .default_price {
+	font-family: Tahoma;
+	font-size: 0.6875em;
+	color: #464646;
+}
+
+#filter .prev_text {
+	font-family: Tahoma;
+	font-size: 0.8125em;
+	color: #3c3c3c;
+}
+
+/*footer*/
+
+#footer {
+	width: 90%;
+	height: 200px;
+	border-top: 3px solid #EEE;
+	padding: 20px 5% 20px 5%;
+	background: #FFF;
+}
+
+#footer .footer_info {
+	float: left;
+	margin: 0 20px;
+}
+
+#footer h3 {
+	font: 1em/30px sans-serif;
+}
+
+#footer p {
+	font-family: Tahoma;
+	color: #262626;
+	font-size: 0.75em;
+	margin-bottom: 7px;
+}
+
+#footer ul li {
+	list-style-type: none;
+}
+
+#footer a {
+	font-family: Tahoma;
+	color: #262626;
+	font-size: 0.6875em;
+	text-decoration: underline;
+}
+
+#footer a:hover {
+	text-decoration: none;
+}
